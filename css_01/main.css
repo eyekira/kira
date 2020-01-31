@@ -1,0 +1,298 @@
+.is-black {
+    color: black;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font: 1em/1.75 Verdana, Arial, Helvetica, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+a,
+a:active,
+a:visited {
+    color: #c30
+}
+
+a:visited {
+    color: #c90
+}
+
+a:hover,
+a:focus {
+    color: #666;
+    text-decoration: none
+}
+
+section {
+    position: relative;
+    height: 100vh
+}
+
+.one {
+    background: tomato
+}
+
+.two {
+    background: teal
+}
+
+.three {
+    background: orange
+}
+
+.left-half,
+.right-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 50%
+}
+
+.right-half {
+    background: #fff;
+    left: 50%;
+    right: 0;
+    overflow: hidden;
+    padding-bottom: 2%
+}
+
+.two .right-half {
+    background: #ddd
+}
+
+.right-half div {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 2% 5%;
+    margin-right: -17px
+        /* scrollbar offset */
+}
+
+.left-half span {
+    font-size: calc(7vw + 7vh + 5vmin);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+        /* http://codepen.io/CrocoDillon/pen/fBJxu */
+}
+        /*----------============= Parallax  =============--------*/
+
+#container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  //border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  display: block;
+  position: absolute;
+  height: 200px !important;
+  width: 200px !important;
+  background: white;
+}
+/*----------============= /Parallax  =============--------*/
+
+
+        /*----------============= Page Br  =============--------*/
+
+br.break-page {
+            display: inline;
+        }
+
+        br.break-320,
+        br.break-360,
+        br.break-375,
+        br.break-400,
+        br.break-414,
+        br.break-639,
+        br.break-768,
+        br.break-800 {
+            display: none;
+        }
+
+
+        /*----------============= Queriers  =============--------*/
+
+        @media only screen and (max-width: 800px) {
+            
+        /*----------============= Page Br  =============--------*/
+
+            br.break-800 {
+                display: inline;
+            }
+
+            br.break-320,
+            br.break-360,
+            br.break-375,
+            br.break-400,
+            br.break-414,
+            br.break-639,
+            br.break-768,
+            br.break-page {
+                display: none;
+            }
+}
+
+        @media only screen and (max-width: 768px) {
+            
+        /*----------============= Page Br  =============--------*/
+
+          br.break-768 {
+                display: inline;
+            }
+
+            br.break-320,
+            br.break-360,
+            br.break-375,
+            br.break-400,
+            br.break-414,
+            br.break-639,
+            br.break-page,
+            br.break-800 {
+                display: none;
+            }
+
+}
+   @media only screen and (max-width: 639px) {
+            
+        /*----------============= Page Br  =============--------*/
+
+br.break-639 {
+                display: inline;
+            }
+
+            br.break-320,
+            br.break-360,
+            br.break-375,
+            br.break-400,
+            br.break-414,
+            br.break-page,
+            br.break-768,
+            br.break-800 {
+                display: none;
+            }
+
+}
+   @media only screen and (max-width: 414px) {
+            
+        /*----------============= Page Br  =============--------*/
+
+          br.break-414 {
+                display: inline;
+            }
+
+            br.break-320,
+            br.break-360,
+            br.break-375,
+            br.break-400,
+            br.break-page,
+            br.break-639,
+            br.break-768,
+            br.break-800 {
+                display: none;
+            }
+
+}
+   @media only screen and (max-width: 400px) {
+            
+        /*----------============= Page Br  =============--------*/
+
+          br.break-400 {
+                display: inline;
+            }
+
+            br.break-320,
+            br.break-360,
+            br.break-375,
+            br.break-page,
+            br.break-414,
+            br.break-639,
+            br.break-768,
+            br.break-800 {
+                display: none;
+            }
+
+
+}
+   @media only screen and (max-width: 375px) {
+            
+        /*----------============= Page Br  =============--------*/
+
+          br.break-375 {
+                display: inline;
+            }
+
+            br.break-320,
+            br.break-360,
+            br.break-page,
+            br.break-400,
+            br.break-414,
+            br.break-639,
+            br.break-768,
+            br.break-800 {
+                display: none;
+            }
+
+}
+   @media only screen and (max-width: 360px) {
+            
+        /*----------============= Page Br  =============--------*/
+
+                     br.break-360 {
+                display: inline;
+            }
+
+            br.break-320,
+            br.break-page,
+            br.break-375,
+            br.break-400,
+            br.break-414,
+            br.break-639,
+            br.break-768,
+            br.break-800 {
+                display: none;
+            }
+
+}
+   @media only screen and (max-width: 320px) {
+            
+        /*----------============= Page Br  =============--------*/
+
+ br.break-320 {
+                display: inline;
+            }
+
+            br.break-page,
+            br.break-360,
+            br.break-375,
+            br.break-400,
+            br.break-414,
+            br.break-639,
+            br.break-768,
+            br.break-800 {
+                display: none;
+            }
+
+}
+
+
+
+.centering {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
